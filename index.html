@@ -19,47 +19,101 @@
         </form>
     </div>
     <div id="button_start">
-        <div class="button_start ">
-            <h2 id="mode_an">Mode anglais</h2>
-            <h2 id="mode_fr" class="none">Mode français</h2>
-            <p id="score_message"></p>
-            <p id="message">Appuyer sur start pour jouer !</p>
-            <div id="mode_anglais">
-                <form action="" id="start_form1">
-                    <button class="start" id="start1">10 verbe irregulier </button>
+        <div class="button_start">
+            <div class="mode-selector">
+                <h2 id="mode_an" class="mode-tab active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 5h12v14H3z"></path>
+                        <path d="M13 5h8v14h-8"></path>
+                    </svg>
+                    <span>Mode anglais</span>
+                </h2>
+                <h2 id="mode_fr" class="mode-tab none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 3H3v18h18V3z"></path>
+                        <path d="M3 9h18M9 3v18"></path>
+                    </svg>
+                    <span>Mode français</span>
+                </h2>
+            </div>
+            
+            <div class="game-status">
+                <p id="score_message" class="score-display"></p>
+                <p id="message" class="welcome-message">Appuyer sur un bouton pour commencer !</p>
+            </div>
+            
+            <div id="mode_anglais" class="game-modes">
+                <form action="" id="start_form1" class="game-card">
+                    <button class="start" id="start1">
+                        <span class="icon">📝</span>
+                        <span class="title">10 verbes irréguliers</span>
+                        <span class="difficulty easy">Facile</span>
+                    </button>
                 </form>
-                <form action="" id="start_form2">
-                    <button class="start" id="start2">10 verbe regulier </button>
+                
+                <form action="" id="start_form2" class="game-card">
+                    <button class="start" id="start2">
+                        <span class="icon">✏️</span>
+                        <span class="title">10 verbes réguliers</span>
+                        <span class="difficulty easy">Facile</span>
+                    </button>
                 </form>
-                <form action="" id="start_form5">
-                    <button class="start" id="start5"> 100+ irregulier </button>
+                
+                <form action="" id="start_form5" class="game-card">
+                    <button class="start" id="start5">
+                        <span class="icon">🏆</span>
+                        <span class="title">100+ verbes irréguliers</span>
+                        <span class="difficulty hard">Expert</span>
+                    </button>
                 </form>
-                </form>
-                <form action="" id="start_form6">
-                    <button class="start" id="start6"> 100+ regulier </button>
+                
+                <form action="" id="start_form6" class="game-card">
+                    <button class="start" id="start6">
+                        <span class="icon">🚀</span>
+                        <span class="title">100+ verbes réguliers</span>
+                        <span class="difficulty hard">Expert</span>
+                    </button>
                 </form>
             </div>
-            <div id="mode_français" class="none">
-                <form action="" id="start_form3">
-                    <button class="start" id="start3">10 verbe irregulier  </button>
+            
+            <div id="mode_français" class="game-modes none">
+                <form action="" id="start_form3" class="game-card">
+                    <button class="start" id="start3">
+                        <span class="icon">📝</span>
+                        <span class="title">10 verbes irréguliers</span>
+                        <span class="difficulty easy">Facile</span>
+                    </button>
                 </form>
-                <form action="" id="start_form4">
-                    <button class="start" id="start4">10 verbe regulier  </button>
+                
+                <form action="" id="start_form4" class="game-card">
+                    <button class="start" id="start4">
+                        <span class="icon">✏️</span>
+                        <span class="title">10 verbes réguliers</span>
+                        <span class="difficulty easy">Facile</span>
+                    </button>
                 </form>
+                
+                <form action="" id="start_form7" class="game-card">
+                    <button class="start" id="start7">
+                        <span class="icon">🏆</span>
+                        <span class="title">100+ verbes irréguliers</span>
+                        <span class="difficulty hard">Expert</span>
+                    </button>
                 </form>
-                <form action="" id="start_form7">
-                    <button class="start" id="start7"> 100+ irregulier  </button>
-                </form>
-                </form>
-                <form action="" id="start_form8">
-                    <button class="start" id="start8"> 100+ regulier  </button>
+                
+                <form action="" id="start_form8" class="game-card">
+                    <button class="start" id="start8">
+                        <span class="icon">🚀</span>
+                        <span class="title">100+ verbes réguliers</span>
+                        <span class="difficulty hard">Expert</span>
+                    </button>
                 </form>
             </div>
         </div>
     </div>
     <div class="interface none" id="interface">
-        <div class=" interface_div1">
-            <p>Score : <span></span></p>
+        <div class="interface_div1">
+            <p>Score : <span id="span"></span></p>
             <p id="nombre_essay"></p>
         </div>
         <div class="interface_div2" id="interface_div2">

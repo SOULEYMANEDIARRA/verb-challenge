@@ -269,7 +269,7 @@ const mode_anglais = element('mode_anglais');
 const mode_français = element('mode_français');
 const francais = element('français');
 const input = element('input');
-const span = document.querySelector('span');
+const span = element('span');
 const form = element('formulaire');
 const resultat_form = element('resultat_form');
 const interface_div2 = element('interface_div2');
@@ -337,7 +337,7 @@ function resetJeu(e) {
     e.preventDefault();
     resultat.classList.remove('monte', 'bad_answer');
     button1.classList.remove('none');
-    initialiserJeu(cle, valeur);
+    initialiserJeu(cle, valeur, totale);
 }
 
 // Vérifier la réponse saisie par l'utilisateur
@@ -353,7 +353,7 @@ function verifierReponse(e) {
     resultat.classList.add('monte');
     button1.classList.add('none');
 
-    if (regex.test(cle[mon_index]) || message === '') {
+    if (regex.test(cle[mon_index]) ) {
         score++;
         francais.textContent = "C'était la bonne réponse !" + cle[mon_index];
     } else {
@@ -469,47 +469,3 @@ menu_forme.addEventListener('submit', (e) => {
 })
 
 
-const test = new IntersectionObserver( call , {}
-)
-
-test.observe
-
-
-
-// console.log('c\'est fini')
-// bind bend fight lie beat wake let louer
-// se tenir debout 
-// monter (vélo, cheval) 
-//  
-// poser, coucher 
-// fondre 
-// coller, enfoncer 
-// déposséder, priver 
-// entendre 
-// abandonner, renoncer à 
-// doubler, dépasser 
-// tricoter 
-// couler
-
-// leave : partir laisser
-/**
- * hang pendre
- * Bereave : déposséder, priver
- * stick : coller, enfoncer
- * Lay : poser, coucher
- * Beat : battre, vaincre
- * Bring : apporter, amener
- * Drive : conduire, propulser
- * Get : obtenir, recevoir, devenir
- * knit : tricoter
- * mean : signifier
- * chide :  blâmer, réprimander
- * set : mettre, pose
- * ring : sonner
- * melt : fondre
- * overtake : doubler, dépasser
- * Shrink :  rétrécir
- * 
- * s'autopieger , les ambassadeur
- * 
- */
